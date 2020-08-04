@@ -7,6 +7,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-	안녕하세요
+	<h1>Hello World!</h1> 
+	<% out.print("welcome to jsp"); %>
+	<h3>Using expression tag</h3>
+	<%= "welcome to jsp" %><br><br>
+	Current time: <%= java.util.Calendar.getInstance().getTime()%>
+	<br>
+	<%! int num=2020; %>
+	<br>
+	<%= "Value of the variable num is:"+ num %>
+	 <br>
+	<%! int productoftwo(int n){ return (n*2); } %><br>
+	<%= "The product of 5*2 is: " + productoftwo(5) %><br>
+	<br>
+	<form action="welcome.jsp">  
+		<input type="text" name="uname">  
+		<input type="submit" value="go"><br/>  
+	</form>  
 </body>
 </html>
